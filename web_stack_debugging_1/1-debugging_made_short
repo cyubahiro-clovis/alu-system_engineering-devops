@@ -2,4 +2,4 @@
 # Makes Nginx listen on port 80 instead of 8080
 sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
 service nginx restart
-rm /run/nginx.pid
+echo "" > /run/nginx.pid
